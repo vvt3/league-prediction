@@ -1,0 +1,72 @@
+{
+  "Ahri": {
+    "damageType": "AP",
+    "cc": 2,
+    "tank": 1,
+    "engage": 2,
+    "scaling": 4
+  },
+  "LeeSin": {
+    "damageType": "AD",
+    "cc": 2,
+    "tank": 2,
+    "engage": 4,
+    "scaling": 2
+  },
+  "Ornn": {
+    "damageType": "AP",
+    "cc": 5,
+    "tank": 5,
+    "engage": 4,
+    "scaling": 4
+  },
+  "Jinx": {
+    "damageType": "AD",
+    "cc": 1,
+    "tank": 1,
+    "engage": 1,
+    "scaling": 5
+  },
+  "Thresh": {
+    "damageType": "AP",
+    "cc": 5,
+    "tank": 3,
+    "engage": 4,
+    "scaling": 3
+  },
+  "Zed": {
+    "damageType": "AD",
+    "cc": 1,
+    "tank": 1,
+    "engage": 4,
+    "scaling": 3
+  },
+  "KhaZix": {
+    "damageType": "AD",
+    "cc": 1,
+    "tank": 1,
+    "engage": 4,
+    "scaling": 3
+  },
+  "Lux": {
+    "damageType": "AP",
+    "cc": 4,
+    "tank": 1,
+    "engage": 2,
+    "scaling": 4
+  },
+  "Ezreal": {
+    "damageType": "AD",
+    "cc": 1,
+    "tank": 1,
+    "engage": 1,
+    "scaling": 4
+  },
+  "Yuumi": {
+    "damageType": "AP",
+    "cc": 2,
+    "tank": 1,
+    "engage": 1,
+    "scaling": 5
+  }
+}
