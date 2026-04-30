@@ -4,11 +4,10 @@ import json
 VERSION = "14.7.1"  # TODO get from riot
 BASE_URL = f"https://ddragon.leagueoflegends.com/cdn/{VERSION}/data/en_US"
 
+all_champs = {}
 # Get all champions
 champion_list_url = f"{BASE_URL}/champion.json"
 champion_list = requests.get(champion_list_url).json()["data"]
-
-all_champs = {}
 
 for champ_name in champion_list:
     champ_url = f"{BASE_URL}/champion/{champ_name}.json"

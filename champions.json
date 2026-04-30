@@ -1,72 +1,2239 @@
 {
+  "Aatrox": {
+    "roles": [
+      "Fighter",
+      "Tank"
+    ],
+    "attack": 8,
+    "defense": 4,
+    "magic": 3,
+    "statusEffects": [
+      "knock",
+      "slow",
+      "pull",
+      "fear"
+    ]
+  },
   "Ahri": {
-    "damageType": "AP",
-    "cc": 2,
-    "tank": 1,
-    "engage": 2,
-    "scaling": 4
+    "roles": [
+      "Mage",
+      "Assassin"
+    ],
+    "attack": 3,
+    "defense": 4,
+    "magic": 8,
+    "statusEffects": [
+      "charm"
+    ]
   },
-  "LeeSin": {
-    "damageType": "AD",
-    "cc": 2,
-    "tank": 2,
-    "engage": 4,
-    "scaling": 2
+  "Akali": {
+    "roles": [
+      "Assassin"
+    ],
+    "attack": 5,
+    "defense": 3,
+    "magic": 8,
+    "statusEffects": [
+      "slow"
+    ]
   },
-  "Ornn": {
-    "damageType": "AP",
-    "cc": 5,
-    "tank": 5,
-    "engage": 4,
-    "scaling": 4
+  "Akshan": {
+    "roles": [
+      "Marksman",
+      "Assassin"
+    ],
+    "attack": 0,
+    "defense": 0,
+    "magic": 0,
+    "statusEffects": []
   },
-  "Jinx": {
-    "damageType": "AD",
-    "cc": 1,
-    "tank": 1,
-    "engage": 1,
-    "scaling": 5
+  "Alistar": {
+    "roles": [
+      "Tank",
+      "Support"
+    ],
+    "attack": 6,
+    "defense": 9,
+    "magic": 5,
+    "statusEffects": [
+      "knock",
+      "knock",
+      "stun"
+    ]
   },
-  "Thresh": {
-    "damageType": "AP",
-    "cc": 5,
-    "tank": 3,
-    "engage": 4,
-    "scaling": 3
+  "Amumu": {
+    "roles": [
+      "Tank",
+      "Mage"
+    ],
+    "attack": 2,
+    "defense": 6,
+    "magic": 8,
+    "statusEffects": [
+      "stun",
+      "stun"
+    ]
   },
-  "Zed": {
-    "damageType": "AD",
-    "cc": 1,
-    "tank": 1,
-    "engage": 4,
-    "scaling": 3
+  "Anivia": {
+    "roles": [
+      "Mage",
+      "Support"
+    ],
+    "attack": 1,
+    "defense": 4,
+    "magic": 10,
+    "statusEffects": [
+      "slow",
+      "stun",
+      "slow",
+      "slow"
+    ]
   },
-  "KhaZix": {
-    "damageType": "AD",
-    "cc": 1,
-    "tank": 1,
-    "engage": 4,
-    "scaling": 3
+  "Annie": {
+    "roles": [
+      "Mage"
+    ],
+    "attack": 2,
+    "defense": 3,
+    "magic": 10,
+    "statusEffects": []
   },
-  "Lux": {
-    "damageType": "AP",
-    "cc": 4,
-    "tank": 1,
-    "engage": 2,
-    "scaling": 4
+  "Aphelios": {
+    "roles": [
+      "Marksman"
+    ],
+    "attack": 6,
+    "defense": 2,
+    "magic": 1,
+    "statusEffects": []
+  },
+  "Ashe": {
+    "roles": [
+      "Marksman",
+      "Support"
+    ],
+    "attack": 7,
+    "defense": 3,
+    "magic": 2,
+    "statusEffects": [
+      "stun",
+      "stun",
+      "slow"
+    ]
+  },
+  "AurelionSol": {
+    "roles": [
+      "Mage"
+    ],
+    "attack": 2,
+    "defense": 3,
+    "magic": 8,
+    "statusEffects": [
+      "stun",
+      "knock",
+      "slow"
+    ]
+  },
+  "Azir": {
+    "roles": [
+      "Mage",
+      "Marksman"
+    ],
+    "attack": 6,
+    "defense": 3,
+    "magic": 8,
+    "statusEffects": [
+      "slow",
+      "knock"
+    ]
+  },
+  "Bard": {
+    "roles": [
+      "Support",
+      "Mage"
+    ],
+    "attack": 4,
+    "defense": 4,
+    "magic": 5,
+    "statusEffects": [
+      "slow",
+      "stun"
+    ]
+  },
+  "Belveth": {
+    "roles": [
+      "Fighter"
+    ],
+    "attack": 4,
+    "defense": 2,
+    "magic": 7,
+    "statusEffects": [
+      "knock",
+      "slow",
+      "slow"
+    ]
+  },
+  "Blitzcrank": {
+    "roles": [
+      "Tank",
+      "Fighter"
+    ],
+    "attack": 4,
+    "defense": 8,
+    "magic": 5,
+    "statusEffects": [
+      "pull",
+      "slow",
+      "knock",
+      "silence"
+    ]
+  },
+  "Brand": {
+    "roles": [
+      "Mage"
+    ],
+    "attack": 2,
+    "defense": 2,
+    "magic": 9,
+    "statusEffects": [
+      "stun",
+      "slow"
+    ]
+  },
+  "Braum": {
+    "roles": [
+      "Support",
+      "Tank"
+    ],
+    "attack": 3,
+    "defense": 9,
+    "magic": 4,
+    "statusEffects": [
+      "slow",
+      "knock",
+      "knock",
+      "knock",
+      "slow"
+    ]
+  },
+  "Briar": {
+    "roles": [
+      "Fighter",
+      "Assassin"
+    ],
+    "attack": 9,
+    "defense": 5,
+    "magic": 3,
+    "statusEffects": [
+      "stun",
+      "slow",
+      "knock",
+      "stun",
+      "flee"
+    ]
+  },
+  "Caitlyn": {
+    "roles": [
+      "Marksman"
+    ],
+    "attack": 8,
+    "defense": 2,
+    "magic": 2,
+    "statusEffects": [
+      "root",
+      "slow"
+    ]
+  },
+  "Camille": {
+    "roles": [
+      "Fighter",
+      "Tank"
+    ],
+    "attack": 8,
+    "defense": 6,
+    "magic": 3,
+    "statusEffects": [
+      "slow",
+      "stun",
+      "knock"
+    ]
+  },
+  "Cassiopeia": {
+    "roles": [
+      "Mage"
+    ],
+    "attack": 2,
+    "defense": 3,
+    "magic": 9,
+    "statusEffects": [
+      "ground",
+      "slow",
+      "stun",
+      "slow"
+    ]
+  },
+  "Chogath": {
+    "roles": [
+      "Tank",
+      "Mage"
+    ],
+    "attack": 3,
+    "defense": 7,
+    "magic": 7,
+    "statusEffects": [
+      "knock",
+      "slow",
+      "silence",
+      "slow"
+    ]
+  },
+  "Corki": {
+    "roles": [
+      "Marksman"
+    ],
+    "attack": 8,
+    "defense": 3,
+    "magic": 6,
+    "statusEffects": [
+      "knock",
+      "slow"
+    ]
+  },
+  "Darius": {
+    "roles": [
+      "Fighter",
+      "Tank"
+    ],
+    "attack": 9,
+    "defense": 5,
+    "magic": 1,
+    "statusEffects": [
+      "slow",
+      "pull",
+      "knock",
+      "slow"
+    ]
+  },
+  "Diana": {
+    "roles": [
+      "Fighter",
+      "Mage"
+    ],
+    "attack": 7,
+    "defense": 6,
+    "magic": 8,
+    "statusEffects": [
+      "pull",
+      "slow"
+    ]
+  },
+  "Draven": {
+    "roles": [
+      "Marksman"
+    ],
+    "attack": 9,
+    "defense": 3,
+    "magic": 1,
+    "statusEffects": [
+      "knock",
+      "slow"
+    ]
+  },
+  "DrMundo": {
+    "roles": [
+      "Fighter",
+      "Tank"
+    ],
+    "attack": 5,
+    "defense": 7,
+    "magic": 6,
+    "statusEffects": [
+      "slow"
+    ]
+  },
+  "Ekko": {
+    "roles": [
+      "Assassin",
+      "Fighter"
+    ],
+    "attack": 5,
+    "defense": 3,
+    "magic": 7,
+    "statusEffects": [
+      "slow",
+      "slow",
+      "stun"
+    ]
+  },
+  "Elise": {
+    "roles": [
+      "Mage",
+      "Fighter"
+    ],
+    "attack": 6,
+    "defense": 5,
+    "magic": 7,
+    "statusEffects": [
+      "stun"
+    ]
+  },
+  "Evelynn": {
+    "roles": [
+      "Assassin",
+      "Mage"
+    ],
+    "attack": 4,
+    "defense": 2,
+    "magic": 7,
+    "statusEffects": [
+      "slow",
+      "charm",
+      "charm"
+    ]
   },
   "Ezreal": {
-    "damageType": "AD",
-    "cc": 1,
-    "tank": 1,
-    "engage": 1,
-    "scaling": 4
+    "roles": [
+      "Marksman",
+      "Mage"
+    ],
+    "attack": 7,
+    "defense": 2,
+    "magic": 6,
+    "statusEffects": []
+  },
+  "Fiddlesticks": {
+    "roles": [
+      "Mage",
+      "Support"
+    ],
+    "attack": 2,
+    "defense": 3,
+    "magic": 9,
+    "statusEffects": [
+      "fear",
+      "fear",
+      "fear",
+      "slow",
+      "silence"
+    ]
+  },
+  "Fiora": {
+    "roles": [
+      "Fighter",
+      "Assassin"
+    ],
+    "attack": 10,
+    "defense": 4,
+    "magic": 2,
+    "statusEffects": [
+      "slow",
+      "stun",
+      "slow",
+      "slow"
+    ]
+  },
+  "Fizz": {
+    "roles": [
+      "Assassin",
+      "Fighter"
+    ],
+    "attack": 6,
+    "defense": 4,
+    "magic": 7,
+    "statusEffects": [
+      "slow",
+      "slow",
+      "slow",
+      "knock",
+      "knock"
+    ]
+  },
+  "Galio": {
+    "roles": [
+      "Tank",
+      "Mage"
+    ],
+    "attack": 1,
+    "defense": 10,
+    "magic": 6,
+    "statusEffects": [
+      "slow",
+      "taunt",
+      "knock",
+      "knock"
+    ]
+  },
+  "Gangplank": {
+    "roles": [
+      "Fighter"
+    ],
+    "attack": 7,
+    "defense": 6,
+    "magic": 4,
+    "statusEffects": [
+      "slow",
+      "slow",
+      "slow"
+    ]
+  },
+  "Garen": {
+    "roles": [
+      "Fighter",
+      "Tank"
+    ],
+    "attack": 7,
+    "defense": 7,
+    "magic": 1,
+    "statusEffects": [
+      "slow",
+      "silence"
+    ]
+  },
+  "Gnar": {
+    "roles": [
+      "Fighter",
+      "Tank"
+    ],
+    "attack": 6,
+    "defense": 5,
+    "magic": 5,
+    "statusEffects": [
+      "slow",
+      "slow",
+      "knock",
+      "slow",
+      "stun"
+    ]
+  },
+  "Gragas": {
+    "roles": [
+      "Fighter",
+      "Mage"
+    ],
+    "attack": 4,
+    "defense": 7,
+    "magic": 6,
+    "statusEffects": [
+      "slow",
+      "slow",
+      "knock",
+      "knock"
+    ]
+  },
+  "Graves": {
+    "roles": [
+      "Marksman"
+    ],
+    "attack": 8,
+    "defense": 5,
+    "magic": 3,
+    "statusEffects": [
+      "slow"
+    ]
+  },
+  "Gwen": {
+    "roles": [
+      "Fighter",
+      "Assassin"
+    ],
+    "attack": 7,
+    "defense": 4,
+    "magic": 5,
+    "statusEffects": [
+      "slow"
+    ]
+  },
+  "Hecarim": {
+    "roles": [
+      "Fighter",
+      "Tank"
+    ],
+    "attack": 8,
+    "defense": 6,
+    "magic": 4,
+    "statusEffects": [
+      "knock",
+      "knock",
+      "fear"
+    ]
+  },
+  "Heimerdinger": {
+    "roles": [
+      "Mage",
+      "Support"
+    ],
+    "attack": 2,
+    "defense": 6,
+    "magic": 8,
+    "statusEffects": [
+      "slow",
+      "stun",
+      "slow",
+      "stun",
+      "slow"
+    ]
+  },
+  "Hwei": {
+    "roles": [
+      "Mage"
+    ],
+    "attack": 7,
+    "defense": 1,
+    "magic": 8,
+    "statusEffects": [
+      "slow",
+      "flee",
+      "root",
+      "slow",
+      "slow"
+    ]
+  },
+  "Illaoi": {
+    "roles": [
+      "Fighter",
+      "Tank"
+    ],
+    "attack": 8,
+    "defense": 6,
+    "magic": 3,
+    "statusEffects": [
+      "slow"
+    ]
+  },
+  "Irelia": {
+    "roles": [
+      "Fighter",
+      "Assassin"
+    ],
+    "attack": 7,
+    "defense": 4,
+    "magic": 5,
+    "statusEffects": [
+      "stun",
+      "slow"
+    ]
+  },
+  "Ivern": {
+    "roles": [
+      "Support",
+      "Mage"
+    ],
+    "attack": 3,
+    "defense": 5,
+    "magic": 7,
+    "statusEffects": [
+      "root",
+      "root",
+      "root",
+      "slow",
+      "knock"
+    ]
+  },
+  "Janna": {
+    "roles": [
+      "Support",
+      "Mage"
+    ],
+    "attack": 3,
+    "defense": 5,
+    "magic": 7,
+    "statusEffects": [
+      "knock",
+      "knock",
+      "slow",
+      "knock"
+    ]
+  },
+  "JarvanIV": {
+    "roles": [
+      "Tank",
+      "Fighter"
+    ],
+    "attack": 6,
+    "defense": 8,
+    "magic": 3,
+    "statusEffects": [
+      "knock",
+      "slow"
+    ]
+  },
+  "Jax": {
+    "roles": [
+      "Fighter",
+      "Assassin"
+    ],
+    "attack": 7,
+    "defense": 5,
+    "magic": 7,
+    "statusEffects": [
+      "stun"
+    ]
+  },
+  "Jayce": {
+    "roles": [
+      "Fighter",
+      "Marksman"
+    ],
+    "attack": 8,
+    "defense": 4,
+    "magic": 3,
+    "statusEffects": [
+      "slow",
+      "knock"
+    ]
+  },
+  "Jhin": {
+    "roles": [
+      "Marksman",
+      "Mage"
+    ],
+    "attack": 10,
+    "defense": 2,
+    "magic": 6,
+    "statusEffects": [
+      "root",
+      "slow",
+      "slow"
+    ]
+  },
+  "Jinx": {
+    "roles": [
+      "Marksman"
+    ],
+    "attack": 9,
+    "defense": 2,
+    "magic": 4,
+    "statusEffects": [
+      "slow",
+      "root"
+    ]
+  },
+  "Kaisa": {
+    "roles": [
+      "Marksman"
+    ],
+    "attack": 8,
+    "defense": 5,
+    "magic": 3,
+    "statusEffects": []
+  },
+  "Kalista": {
+    "roles": [
+      "Marksman"
+    ],
+    "attack": 8,
+    "defense": 2,
+    "magic": 4,
+    "statusEffects": [
+      "slow",
+      "knock"
+    ]
+  },
+  "Karma": {
+    "roles": [
+      "Mage",
+      "Support"
+    ],
+    "attack": 1,
+    "defense": 7,
+    "magic": 8,
+    "statusEffects": [
+      "slow",
+      "root",
+      "slow",
+      "root"
+    ]
+  },
+  "Karthus": {
+    "roles": [
+      "Mage"
+    ],
+    "attack": 2,
+    "defense": 2,
+    "magic": 10,
+    "statusEffects": [
+      "slow"
+    ]
+  },
+  "Kassadin": {
+    "roles": [
+      "Assassin",
+      "Mage"
+    ],
+    "attack": 3,
+    "defense": 5,
+    "magic": 8,
+    "statusEffects": [
+      "slow"
+    ]
+  },
+  "Katarina": {
+    "roles": [
+      "Assassin",
+      "Mage"
+    ],
+    "attack": 4,
+    "defense": 3,
+    "magic": 9,
+    "statusEffects": []
+  },
+  "Kayle": {
+    "roles": [
+      "Fighter",
+      "Support"
+    ],
+    "attack": 6,
+    "defense": 6,
+    "magic": 7,
+    "statusEffects": [
+      "slow"
+    ]
+  },
+  "Kayn": {
+    "roles": [
+      "Fighter",
+      "Assassin"
+    ],
+    "attack": 10,
+    "defense": 6,
+    "magic": 1,
+    "statusEffects": [
+      "slow",
+      "knock",
+      "slow"
+    ]
+  },
+  "Kennen": {
+    "roles": [
+      "Mage",
+      "Marksman"
+    ],
+    "attack": 6,
+    "defense": 4,
+    "magic": 7,
+    "statusEffects": []
+  },
+  "Khazix": {
+    "roles": [
+      "Assassin"
+    ],
+    "attack": 9,
+    "defense": 4,
+    "magic": 3,
+    "statusEffects": [
+      "slow"
+    ]
+  },
+  "Kindred": {
+    "roles": [
+      "Marksman"
+    ],
+    "attack": 8,
+    "defense": 2,
+    "magic": 2,
+    "statusEffects": [
+      "slow"
+    ]
+  },
+  "Kled": {
+    "roles": [
+      "Fighter",
+      "Tank"
+    ],
+    "attack": 8,
+    "defense": 2,
+    "magic": 2,
+    "statusEffects": [
+      "pull",
+      "slow",
+      "knock"
+    ]
+  },
+  "KogMaw": {
+    "roles": [
+      "Marksman",
+      "Mage"
+    ],
+    "attack": 8,
+    "defense": 2,
+    "magic": 5,
+    "statusEffects": [
+      "slow"
+    ]
+  },
+  "KSante": {
+    "roles": [
+      "Tank",
+      "Fighter"
+    ],
+    "attack": 8,
+    "defense": 8,
+    "magic": 7,
+    "statusEffects": [
+      "slow",
+      "stun",
+      "pull",
+      "slow",
+      "knock",
+      "stun",
+      "knock",
+      "stun",
+      "knock",
+      "knock",
+      "stun"
+    ]
+  },
+  "Leblanc": {
+    "roles": [
+      "Assassin",
+      "Mage"
+    ],
+    "attack": 1,
+    "defense": 4,
+    "magic": 10,
+    "statusEffects": [
+      "root",
+      "root"
+    ]
+  },
+  "LeeSin": {
+    "roles": [
+      "Fighter",
+      "Assassin"
+    ],
+    "attack": 8,
+    "defense": 5,
+    "magic": 3,
+    "statusEffects": [
+      "slow",
+      "knock",
+      "knock"
+    ]
+  },
+  "Leona": {
+    "roles": [
+      "Tank",
+      "Support"
+    ],
+    "attack": 4,
+    "defense": 8,
+    "magic": 3,
+    "statusEffects": [
+      "stun",
+      "root",
+      "slow",
+      "stun",
+      "slow"
+    ]
+  },
+  "Lillia": {
+    "roles": [
+      "Fighter",
+      "Mage"
+    ],
+    "attack": 0,
+    "defense": 2,
+    "magic": 10,
+    "statusEffects": [
+      "slow",
+      "sleep"
+    ]
+  },
+  "Lissandra": {
+    "roles": [
+      "Mage"
+    ],
+    "attack": 2,
+    "defense": 5,
+    "magic": 8,
+    "statusEffects": [
+      "slow",
+      "root",
+      "stun",
+      "slow"
+    ]
+  },
+  "Lucian": {
+    "roles": [
+      "Marksman"
+    ],
+    "attack": 8,
+    "defense": 5,
+    "magic": 3,
+    "statusEffects": []
+  },
+  "Lulu": {
+    "roles": [
+      "Support",
+      "Mage"
+    ],
+    "attack": 4,
+    "defense": 5,
+    "magic": 7,
+    "statusEffects": [
+      "slow",
+      "polymorph",
+      "knock",
+      "slow"
+    ]
+  },
+  "Lux": {
+    "roles": [
+      "Mage",
+      "Support"
+    ],
+    "attack": 2,
+    "defense": 4,
+    "magic": 9,
+    "statusEffects": [
+      "root",
+      "slow",
+      "slow"
+    ]
+  },
+  "Malphite": {
+    "roles": [
+      "Tank",
+      "Fighter"
+    ],
+    "attack": 5,
+    "defense": 9,
+    "magic": 7,
+    "statusEffects": [
+      "slow",
+      "slow",
+      "knock"
+    ]
+  },
+  "Malzahar": {
+    "roles": [
+      "Mage",
+      "Assassin"
+    ],
+    "attack": 2,
+    "defense": 2,
+    "magic": 9,
+    "statusEffects": [
+      "silence"
+    ]
+  },
+  "Maokai": {
+    "roles": [
+      "Tank",
+      "Mage"
+    ],
+    "attack": 3,
+    "defense": 8,
+    "magic": 6,
+    "statusEffects": [
+      "slow",
+      "knock",
+      "root",
+      "slow",
+      "slow",
+      "root"
+    ]
+  },
+  "MasterYi": {
+    "roles": [
+      "Assassin",
+      "Fighter"
+    ],
+    "attack": 10,
+    "defense": 4,
+    "magic": 2,
+    "statusEffects": [
+      "slow"
+    ]
+  },
+  "Milio": {
+    "roles": [
+      "Support"
+    ],
+    "attack": 2,
+    "defense": 4,
+    "magic": 8,
+    "statusEffects": [
+      "knock",
+      "slow"
+    ]
+  },
+  "MissFortune": {
+    "roles": [
+      "Marksman"
+    ],
+    "attack": 8,
+    "defense": 2,
+    "magic": 5,
+    "statusEffects": [
+      "slow"
+    ]
+  },
+  "MonkeyKing": {
+    "roles": [
+      "Fighter",
+      "Tank"
+    ],
+    "attack": 8,
+    "defense": 5,
+    "magic": 2,
+    "statusEffects": [
+      "knock"
+    ]
+  },
+  "Mordekaiser": {
+    "roles": [
+      "Fighter"
+    ],
+    "attack": 4,
+    "defense": 6,
+    "magic": 7,
+    "statusEffects": []
+  },
+  "Morgana": {
+    "roles": [
+      "Mage",
+      "Support"
+    ],
+    "attack": 1,
+    "defense": 6,
+    "magic": 8,
+    "statusEffects": [
+      "root",
+      "slow",
+      "stun"
+    ]
+  },
+  "Naafiri": {
+    "roles": [
+      "Assassin"
+    ],
+    "attack": 9,
+    "defense": 5,
+    "magic": 0,
+    "statusEffects": [
+      "slow"
+    ]
+  },
+  "Nami": {
+    "roles": [
+      "Support",
+      "Mage"
+    ],
+    "attack": 4,
+    "defense": 3,
+    "magic": 7,
+    "statusEffects": [
+      "stun",
+      "slow",
+      "knock",
+      "slow",
+      "slow"
+    ]
+  },
+  "Nasus": {
+    "roles": [
+      "Fighter",
+      "Tank"
+    ],
+    "attack": 7,
+    "defense": 5,
+    "magic": 6,
+    "statusEffects": [
+      "slow",
+      "slow"
+    ]
+  },
+  "Nautilus": {
+    "roles": [
+      "Tank",
+      "Support"
+    ],
+    "attack": 4,
+    "defense": 6,
+    "magic": 6,
+    "statusEffects": [
+      "stun",
+      "slow",
+      "knock",
+      "stun",
+      "knock",
+      "stun"
+    ]
+  },
+  "Neeko": {
+    "roles": [
+      "Mage",
+      "Support"
+    ],
+    "attack": 1,
+    "defense": 1,
+    "magic": 9,
+    "statusEffects": [
+      "root",
+      "root",
+      "knock",
+      "stun"
+    ]
+  },
+  "Nidalee": {
+    "roles": [
+      "Assassin",
+      "Mage"
+    ],
+    "attack": 5,
+    "defense": 4,
+    "magic": 7,
+    "statusEffects": []
+  },
+  "Nilah": {
+    "roles": [
+      "Fighter",
+      "Assassin"
+    ],
+    "attack": 8,
+    "defense": 4,
+    "magic": 4,
+    "statusEffects": [
+      "pull"
+    ]
+  },
+  "Nocturne": {
+    "roles": [
+      "Assassin",
+      "Fighter"
+    ],
+    "attack": 9,
+    "defense": 5,
+    "magic": 2,
+    "statusEffects": [
+      "fear",
+      "fear"
+    ]
+  },
+  "Nunu": {
+    "roles": [
+      "Tank",
+      "Fighter"
+    ],
+    "attack": 4,
+    "defense": 6,
+    "magic": 7,
+    "statusEffects": [
+      "knock",
+      "slow",
+      "root",
+      "slow",
+      "slow"
+    ]
+  },
+  "Olaf": {
+    "roles": [
+      "Fighter",
+      "Tank"
+    ],
+    "attack": 9,
+    "defense": 5,
+    "magic": 3,
+    "statusEffects": [
+      "slow"
+    ]
+  },
+  "Orianna": {
+    "roles": [
+      "Mage",
+      "Support"
+    ],
+    "attack": 4,
+    "defense": 3,
+    "magic": 9,
+    "statusEffects": [
+      "slow",
+      "knock"
+    ]
+  },
+  "Ornn": {
+    "roles": [
+      "Tank",
+      "Fighter"
+    ],
+    "attack": 5,
+    "defense": 9,
+    "magic": 3,
+    "statusEffects": [
+      "slow",
+      "knock",
+      "knock",
+      "slow",
+      "knock"
+    ]
+  },
+  "Pantheon": {
+    "roles": [
+      "Fighter",
+      "Assassin"
+    ],
+    "attack": 9,
+    "defense": 4,
+    "magic": 3,
+    "statusEffects": [
+      "stun",
+      "slow"
+    ]
+  },
+  "Poppy": {
+    "roles": [
+      "Tank",
+      "Fighter"
+    ],
+    "attack": 6,
+    "defense": 7,
+    "magic": 2,
+    "statusEffects": [
+      "slow",
+      "ground",
+      "slow",
+      "stun",
+      "slow",
+      "knock",
+      "knock",
+      "knock"
+    ]
+  },
+  "Pyke": {
+    "roles": [
+      "Support",
+      "Assassin"
+    ],
+    "attack": 9,
+    "defense": 3,
+    "magic": 1,
+    "statusEffects": [
+      "slow",
+      "pull",
+      "slow",
+      "stun"
+    ]
+  },
+  "Qiyana": {
+    "roles": [
+      "Assassin",
+      "Fighter"
+    ],
+    "attack": 0,
+    "defense": 2,
+    "magic": 4,
+    "statusEffects": [
+      "root",
+      "slow",
+      "knock",
+      "stun",
+      "stun",
+      "stun"
+    ]
+  },
+  "Quinn": {
+    "roles": [
+      "Marksman",
+      "Assassin"
+    ],
+    "attack": 9,
+    "defense": 4,
+    "magic": 2,
+    "statusEffects": [
+      "disarm",
+      "knock",
+      "slow"
+    ]
+  },
+  "Rakan": {
+    "roles": [
+      "Support"
+    ],
+    "attack": 2,
+    "defense": 4,
+    "magic": 8,
+    "statusEffects": [
+      "knock",
+      "charm"
+    ]
+  },
+  "Rammus": {
+    "roles": [
+      "Tank",
+      "Fighter"
+    ],
+    "attack": 4,
+    "defense": 10,
+    "magic": 5,
+    "statusEffects": [
+      "knock",
+      "slow",
+      "taunt",
+      "slow",
+      "knock",
+      "slow"
+    ]
+  },
+  "RekSai": {
+    "roles": [
+      "Fighter"
+    ],
+    "attack": 8,
+    "defense": 5,
+    "magic": 2,
+    "statusEffects": []
+  },
+  "Rell": {
+    "roles": [
+      "Tank",
+      "Support"
+    ],
+    "attack": 0,
+    "defense": 0,
+    "magic": 0,
+    "statusEffects": [
+      "stun",
+      "knock",
+      "slow",
+      "pull"
+    ]
+  },
+  "Renata": {
+    "roles": [
+      "Support",
+      "Mage"
+    ],
+    "attack": 2,
+    "defense": 6,
+    "magic": 9,
+    "statusEffects": [
+      "root",
+      "pull",
+      "stun",
+      "slow"
+    ]
+  },
+  "Renekton": {
+    "roles": [
+      "Fighter",
+      "Tank"
+    ],
+    "attack": 8,
+    "defense": 5,
+    "magic": 2,
+    "statusEffects": [
+      "stun",
+      "stun"
+    ]
+  },
+  "Rengar": {
+    "roles": [
+      "Assassin",
+      "Fighter"
+    ],
+    "attack": 7,
+    "defense": 4,
+    "magic": 2,
+    "statusEffects": [
+      "slow",
+      "root"
+    ]
+  },
+  "Riven": {
+    "roles": [
+      "Fighter",
+      "Assassin"
+    ],
+    "attack": 8,
+    "defense": 5,
+    "magic": 1,
+    "statusEffects": [
+      "knock",
+      "stun"
+    ]
+  },
+  "Rumble": {
+    "roles": [
+      "Fighter",
+      "Mage"
+    ],
+    "attack": 3,
+    "defense": 6,
+    "magic": 8,
+    "statusEffects": [
+      "slow",
+      "slow",
+      "slow",
+      "slow",
+      "slow"
+    ]
+  },
+  "Ryze": {
+    "roles": [
+      "Mage",
+      "Fighter"
+    ],
+    "attack": 2,
+    "defense": 2,
+    "magic": 10,
+    "statusEffects": [
+      "slow",
+      "root",
+      "slow"
+    ]
+  },
+  "Samira": {
+    "roles": [
+      "Marksman"
+    ],
+    "attack": 8,
+    "defense": 5,
+    "magic": 3,
+    "statusEffects": []
+  },
+  "Sejuani": {
+    "roles": [
+      "Tank",
+      "Fighter"
+    ],
+    "attack": 5,
+    "defense": 7,
+    "magic": 6,
+    "statusEffects": [
+      "knock",
+      "knock",
+      "slow",
+      "stun",
+      "stun",
+      "stun",
+      "slow"
+    ]
+  },
+  "Senna": {
+    "roles": [
+      "Marksman",
+      "Support"
+    ],
+    "attack": 7,
+    "defense": 2,
+    "magic": 6,
+    "statusEffects": [
+      "slow",
+      "root"
+    ]
+  },
+  "Seraphine": {
+    "roles": [
+      "Mage",
+      "Support"
+    ],
+    "attack": 0,
+    "defense": 0,
+    "magic": 0,
+    "statusEffects": [
+      "slow",
+      "slow",
+      "root",
+      "stun",
+      "charm"
+    ]
+  },
+  "Sett": {
+    "roles": [
+      "Fighter",
+      "Tank"
+    ],
+    "attack": 8,
+    "defense": 5,
+    "magic": 1,
+    "statusEffects": [
+      "slow",
+      "stun",
+      "slow"
+    ]
+  },
+  "Shaco": {
+    "roles": [
+      "Assassin"
+    ],
+    "attack": 8,
+    "defense": 4,
+    "magic": 6,
+    "statusEffects": [
+      "fear",
+      "slow",
+      "slow",
+      "fear"
+    ]
+  },
+  "Shen": {
+    "roles": [
+      "Tank"
+    ],
+    "attack": 3,
+    "defense": 9,
+    "magic": 3,
+    "statusEffects": [
+      "slow",
+      "taunt"
+    ]
+  },
+  "Shyvana": {
+    "roles": [
+      "Fighter",
+      "Tank"
+    ],
+    "attack": 8,
+    "defense": 6,
+    "magic": 3,
+    "statusEffects": [
+      "knock"
+    ]
+  },
+  "Singed": {
+    "roles": [
+      "Tank",
+      "Fighter"
+    ],
+    "attack": 4,
+    "defense": 8,
+    "magic": 7,
+    "statusEffects": [
+      "ground",
+      "slow",
+      "root"
+    ]
+  },
+  "Sion": {
+    "roles": [
+      "Tank",
+      "Fighter"
+    ],
+    "attack": 5,
+    "defense": 9,
+    "magic": 3,
+    "statusEffects": [
+      "slow",
+      "knock",
+      "stun",
+      "slow",
+      "knock",
+      "knock",
+      "stun",
+      "slow"
+    ]
+  },
+  "Sivir": {
+    "roles": [
+      "Marksman"
+    ],
+    "attack": 9,
+    "defense": 3,
+    "magic": 1,
+    "statusEffects": []
+  },
+  "Skarner": {
+    "roles": [
+      "Fighter",
+      "Tank"
+    ],
+    "attack": 7,
+    "defense": 8,
+    "magic": 5,
+    "statusEffects": [
+      "slow",
+      "slow",
+      "slow",
+      "stun"
+    ]
+  },
+  "Smolder": {
+    "roles": [
+      "Marksman"
+    ],
+    "attack": 8,
+    "defense": 2,
+    "magic": 5,
+    "statusEffects": [
+      "slow",
+      "slow"
+    ]
+  },
+  "Sona": {
+    "roles": [
+      "Support",
+      "Mage"
+    ],
+    "attack": 5,
+    "defense": 2,
+    "magic": 8,
+    "statusEffects": [
+      "slow",
+      "stun"
+    ]
+  },
+  "Soraka": {
+    "roles": [
+      "Support",
+      "Mage"
+    ],
+    "attack": 2,
+    "defense": 5,
+    "magic": 7,
+    "statusEffects": [
+      "slow",
+      "silence",
+      "root"
+    ]
+  },
+  "Swain": {
+    "roles": [
+      "Mage",
+      "Fighter"
+    ],
+    "attack": 2,
+    "defense": 6,
+    "magic": 9,
+    "statusEffects": [
+      "slow",
+      "root",
+      "slow"
+    ]
+  },
+  "Sylas": {
+    "roles": [
+      "Mage",
+      "Assassin"
+    ],
+    "attack": 3,
+    "defense": 4,
+    "magic": 8,
+    "statusEffects": [
+      "slow",
+      "knock"
+    ]
+  },
+  "Syndra": {
+    "roles": [
+      "Mage"
+    ],
+    "attack": 2,
+    "defense": 3,
+    "magic": 9,
+    "statusEffects": [
+      "slow",
+      "knock",
+      "stun",
+      "slow",
+      "slow"
+    ]
+  },
+  "TahmKench": {
+    "roles": [
+      "Support",
+      "Tank"
+    ],
+    "attack": 3,
+    "defense": 9,
+    "magic": 6,
+    "statusEffects": []
+  },
+  "Taliyah": {
+    "roles": [
+      "Mage",
+      "Support"
+    ],
+    "attack": 1,
+    "defense": 7,
+    "magic": 8,
+    "statusEffects": [
+      "slow",
+      "stun",
+      "knock",
+      "slow",
+      "knock",
+      "stun"
+    ]
+  },
+  "Talon": {
+    "roles": [
+      "Assassin"
+    ],
+    "attack": 9,
+    "defense": 3,
+    "magic": 1,
+    "statusEffects": [
+      "slow"
+    ]
+  },
+  "Taric": {
+    "roles": [
+      "Support",
+      "Fighter"
+    ],
+    "attack": 4,
+    "defense": 8,
+    "magic": 5,
+    "statusEffects": [
+      "stun"
+    ]
+  },
+  "Teemo": {
+    "roles": [
+      "Marksman",
+      "Assassin"
+    ],
+    "attack": 5,
+    "defense": 3,
+    "magic": 7,
+    "statusEffects": [
+      "blind",
+      "slow"
+    ]
+  },
+  "Thresh": {
+    "roles": [
+      "Support",
+      "Fighter"
+    ],
+    "attack": 5,
+    "defense": 6,
+    "magic": 6,
+    "statusEffects": [
+      "stun",
+      "pull",
+      "pull",
+      "slow",
+      "slow",
+      "slow"
+    ]
+  },
+  "Tristana": {
+    "roles": [
+      "Marksman",
+      "Assassin"
+    ],
+    "attack": 9,
+    "defense": 3,
+    "magic": 5,
+    "statusEffects": [
+      "slow",
+      "knock"
+    ]
+  },
+  "Trundle": {
+    "roles": [
+      "Fighter",
+      "Tank"
+    ],
+    "attack": 7,
+    "defense": 6,
+    "magic": 2,
+    "statusEffects": [
+      "slow",
+      "knock",
+      "slow"
+    ]
+  },
+  "Tryndamere": {
+    "roles": [
+      "Fighter",
+      "Assassin"
+    ],
+    "attack": 10,
+    "defense": 5,
+    "magic": 2,
+    "statusEffects": [
+      "slow"
+    ]
+  },
+  "TwistedFate": {
+    "roles": [
+      "Mage"
+    ],
+    "attack": 6,
+    "defense": 2,
+    "magic": 6,
+    "statusEffects": [
+      "slow",
+      "stun"
+    ]
+  },
+  "Twitch": {
+    "roles": [
+      "Marksman",
+      "Assassin"
+    ],
+    "attack": 9,
+    "defense": 2,
+    "magic": 3,
+    "statusEffects": [
+      "slow"
+    ]
+  },
+  "Udyr": {
+    "roles": [
+      "Fighter",
+      "Tank"
+    ],
+    "attack": 8,
+    "defense": 7,
+    "magic": 4,
+    "statusEffects": [
+      "stun",
+      "slow",
+      "slow"
+    ]
+  },
+  "Urgot": {
+    "roles": [
+      "Fighter",
+      "Tank"
+    ],
+    "attack": 8,
+    "defense": 5,
+    "magic": 3,
+    "statusEffects": [
+      "slow",
+      "slow",
+      "stun",
+      "slow",
+      "fear"
+    ]
+  },
+  "Varus": {
+    "roles": [
+      "Marksman",
+      "Mage"
+    ],
+    "attack": 7,
+    "defense": 3,
+    "magic": 4,
+    "statusEffects": [
+      "slow",
+      "slow",
+      "root",
+      "root",
+      "root"
+    ]
+  },
+  "Vayne": {
+    "roles": [
+      "Marksman",
+      "Assassin"
+    ],
+    "attack": 10,
+    "defense": 1,
+    "magic": 1,
+    "statusEffects": [
+      "knock",
+      "stun"
+    ]
+  },
+  "Veigar": {
+    "roles": [
+      "Mage"
+    ],
+    "attack": 2,
+    "defense": 2,
+    "magic": 10,
+    "statusEffects": [
+      "stun"
+    ]
+  },
+  "Velkoz": {
+    "roles": [
+      "Mage"
+    ],
+    "attack": 2,
+    "defense": 2,
+    "magic": 10,
+    "statusEffects": [
+      "slow",
+      "knock",
+      "knock",
+      "knock",
+      "slow"
+    ]
+  },
+  "Vex": {
+    "roles": [
+      "Mage"
+    ],
+    "attack": 0,
+    "defense": 0,
+    "magic": 0,
+    "statusEffects": [
+      "slow"
+    ]
+  },
+  "Vi": {
+    "roles": [
+      "Fighter",
+      "Assassin"
+    ],
+    "attack": 8,
+    "defense": 5,
+    "magic": 3,
+    "statusEffects": [
+      "slow",
+      "knock",
+      "knock",
+      "stun"
+    ]
+  },
+  "Viego": {
+    "roles": [
+      "Assassin",
+      "Fighter"
+    ],
+    "attack": 6,
+    "defense": 4,
+    "magic": 2,
+    "statusEffects": [
+      "slow",
+      "stun",
+      "slow",
+      "knock"
+    ]
+  },
+  "Viktor": {
+    "roles": [
+      "Mage"
+    ],
+    "attack": 2,
+    "defense": 4,
+    "magic": 10,
+    "statusEffects": [
+      "slow",
+      "stun",
+      "slow"
+    ]
+  },
+  "Vladimir": {
+    "roles": [
+      "Mage"
+    ],
+    "attack": 2,
+    "defense": 6,
+    "magic": 8,
+    "statusEffects": [
+      "slow",
+      "slow",
+      "slow"
+    ]
+  },
+  "Volibear": {
+    "roles": [
+      "Fighter",
+      "Tank"
+    ],
+    "attack": 7,
+    "defense": 7,
+    "magic": 4,
+    "statusEffects": [
+      "stun",
+      "stun",
+      "slow",
+      "slow"
+    ]
+  },
+  "Warwick": {
+    "roles": [
+      "Fighter",
+      "Tank"
+    ],
+    "attack": 9,
+    "defense": 5,
+    "magic": 3,
+    "statusEffects": [
+      "fear"
+    ]
+  },
+  "Xayah": {
+    "roles": [
+      "Marksman"
+    ],
+    "attack": 10,
+    "defense": 6,
+    "magic": 1,
+    "statusEffects": [
+      "root"
+    ]
+  },
+  "Xerath": {
+    "roles": [
+      "Mage"
+    ],
+    "attack": 1,
+    "defense": 3,
+    "magic": 10,
+    "statusEffects": [
+      "slow",
+      "slow",
+      "slow",
+      "stun"
+    ]
+  },
+  "XinZhao": {
+    "roles": [
+      "Fighter",
+      "Assassin"
+    ],
+    "attack": 8,
+    "defense": 6,
+    "magic": 3,
+    "statusEffects": [
+      "knock",
+      "slow",
+      "slow",
+      "knock"
+    ]
+  },
+  "Yasuo": {
+    "roles": [
+      "Fighter",
+      "Assassin"
+    ],
+    "attack": 8,
+    "defense": 4,
+    "magic": 4,
+    "statusEffects": [
+      "knock"
+    ]
+  },
+  "Yone": {
+    "roles": [
+      "Assassin",
+      "Fighter"
+    ],
+    "attack": 8,
+    "defense": 4,
+    "magic": 4,
+    "statusEffects": [
+      "knock",
+      "knock"
+    ]
+  },
+  "Yorick": {
+    "roles": [
+      "Fighter",
+      "Tank"
+    ],
+    "attack": 6,
+    "defense": 6,
+    "magic": 4,
+    "statusEffects": [
+      "slow"
+    ]
   },
   "Yuumi": {
-    "damageType": "AP",
-    "cc": 2,
-    "tank": 1,
-    "engage": 1,
-    "scaling": 5
+    "roles": [
+      "Support",
+      "Mage"
+    ],
+    "attack": 5,
+    "defense": 1,
+    "magic": 8,
+    "statusEffects": [
+      "slow",
+      "slow",
+      "slow",
+      "slow"
+    ]
+  },
+  "Zac": {
+    "roles": [
+      "Tank",
+      "Fighter"
+    ],
+    "attack": 3,
+    "defense": 7,
+    "magic": 7,
+    "statusEffects": [
+      "slow",
+      "slow",
+      "knock",
+      "slow",
+      "knock",
+      "knock",
+      "slow"
+    ]
+  },
+  "Zed": {
+    "roles": [
+      "Assassin"
+    ],
+    "attack": 9,
+    "defense": 2,
+    "magic": 1,
+    "statusEffects": [
+      "slow",
+      "slow"
+    ]
+  },
+  "Zeri": {
+    "roles": [
+      "Marksman"
+    ],
+    "attack": 8,
+    "defense": 5,
+    "magic": 3,
+    "statusEffects": [
+      "slow"
+    ]
+  },
+  "Ziggs": {
+    "roles": [
+      "Mage"
+    ],
+    "attack": 2,
+    "defense": 4,
+    "magic": 9,
+    "statusEffects": [
+      "knock",
+      "slow"
+    ]
+  },
+  "Zilean": {
+    "roles": [
+      "Support",
+      "Mage"
+    ],
+    "attack": 2,
+    "defense": 5,
+    "magic": 8,
+    "statusEffects": [
+      "stun",
+      "slow"
+    ]
+  },
+  "Zoe": {
+    "roles": [
+      "Mage",
+      "Support"
+    ],
+    "attack": 1,
+    "defense": 7,
+    "magic": 8,
+    "statusEffects": [
+      "sleep"
+    ]
+  },
+  "Zyra": {
+    "roles": [
+      "Mage",
+      "Support"
+    ],
+    "attack": 4,
+    "defense": 3,
+    "magic": 8,
+    "statusEffects": [
+      "root",
+      "slow",
+      "slow",
+      "knock"
+    ]
   }
 }
