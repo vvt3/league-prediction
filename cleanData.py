@@ -90,7 +90,7 @@ VALID_STATUS = (
 with open("raw_champions.json") as f:
     rawRiot = json.load(f)
 
-with open("raw_champions_community.json") as f:
+with open("community_champions.json") as f:
     rawComminity = json.load(f)
 
 cleaned = {}
@@ -146,7 +146,7 @@ def getStatusTags(spellInfo):
         tooltips.append(info["tooltip"])
     # Get <status>
     for t in tooltips:
-        matches = re.findall(r"<status>(.*?)</status", t)
+        matches = re.findall(r"<status>(.*?)</status>", t)
         if matches:
             result = [m.strip() for m in matches]
             status.append(result)
@@ -158,16 +158,28 @@ def getStatusTags(spellInfo):
 
 
 for name, champ in rawRiot.items():
+    community_champ = rawComminity.get(name)
+
     cleaned[name] = {
         "roles": champ.get("tags", []),
         "attack": champ["info"]["attack"],
         "defense": champ["info"]["defense"],
         "magic": champ["info"]["magic"],
         # "difficulty": champ["info"]["difficulty"],
-        "statusEffects": [],
-        # "statusEffects": getStatusTags(champ["spells"]),
+        "statusEffects": getStatusTags(champ["spells"]),
         # "passiveInfo": champ["passive"]["description"],
     }
+
+    if community_champ:
+        # cleaned[name]["passive"] = community_champ.get("passive", {})
+        cleaned[name]["roles"] = community_champ.get("roles", [])
+        cleaned[name]["damage type"] = community_champ.get("tacticalInfo")["damageType"]
+        cleaned[name]["attack type"] = community_champ.get("tacticalInfo", {})[
+            "attackType"
+        ]
+        cleaned[name]["playstyleInfo"] = community_champ.get("playstyleInfo", {})
+        cleaned[name]["championTagInfo"] = community_champ.get("championTagInfo", {})
+
     print("Finished: ", name)
 
 with open("champions.json", "w") as f:

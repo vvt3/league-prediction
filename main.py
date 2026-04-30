@@ -6,38 +6,50 @@ with open("champions.json") as f:
     CHAMPS = json.load(f)
 
 CC_QUANIFIED = {
-    "stun": 10,
-    "slow": 10,
-    "knockup": 10,
-    "root": 10,
-    "silence": 10,
-    "supress": 10,
-    "ground": 10,
-    "flee": 10,
-    "taunt": 10,
-    "fear": 10,
-    "sleep": 10,
-    "pull": 10,
-    "blind": 10,
-    "charm": 10,
-    "airbourne": 10,
-    "polymorph": 10,
-    "disarm": 10,
+    "stun": 5,
+    "slow": 1,
+    "knockup": 3,
+    "root": 2,
+    "silence": 1,
+    "supress": 4,
+    "ground": 1,
+    "flee": 1,
+    "taunt": 1,
+    "fear": 3,
+    "sleep": 4,
+    "pull": 3,
+    "blind": 1,
+    "charm": 3,
+    "airbourne": 4,
+    "polymorph": 5,
+    "disarm": 2,
 }
 
 
 # Team Analysis
 def analyse_team(champs):
-    team = {"ad": 0, "ap": 0, "cc": 0, "tank": 0, "engage": 0, "scaling": 0}
+    team = {
+        "ad": 0,
+        "ap": 0,
+        "cc": 0,
+        "tank": 0,
+        "engage": 0,
+        "scaling": 0,
+        "compPhysical": 0,
+        "compMagic": 0,
+    }
 
     for champ in champs:
         c = CHAMPS[champ]
 
         team["ad"] += c["attack"]
         team["ap"] += c["magic"]
-
-        # team["cc"] += c["cc"]
-        # team["tank"] += c["tank"]
+        team["tank"] += c["playstyleInfo"]["durability"] + c["defense"]
+        team["cc"] += c["playstyleInfo"]["crowdControl"]
+        if c["damage type"] == "kPhysical":
+            team["compPhysical"] += 1
+        elif c["damage type"] == "kMagic":
+            team["compMagic"] += 1
         # team["engage"] += c["engage"]
         # team["scaling"] += c["scaling"]
 
@@ -50,31 +62,53 @@ def compare(t1, t2):
     reasons = []
 
     if t1["cc"] > t2["cc"]:
-        score += 0.1
-        reasons.append("Stronger crowd control")
+        if t1["tank"] > 20:  # rough engage proxy
+            score += 0.3
+            reasons.append("Strong CC with frontline to apply it")
+        else:
+            score += 0.1
+            reasons.append("Higher CC but limited engage")
 
-    if t2["tank"] < 6:
-        score += 0.1
-        reasons.append("Enemy lacks frontline")
+    if t1["tank"] < 15:
+        score -= 0.2
+        reasons.append("No reliable frontline")
 
-    if t1["engage"] > t2["engage"]:
-        score += 0.1
-        reasons.append("Better engage")
+    # Front-to-Back Comp
+    if t1["tank"] > 20 and t1["cc"] > 15:
+        score += 0.2
+        reasons.append("Strong front-to-back teamfight comp")
 
-    if t1["scaling"] > t2["scaling"]:
+    # Glass Cannon Comp
+    if t1["tank"] < 12 and t1["ad"] + t1["ap"] > 40:
         score += 0.1
-        reasons.append("Better late game scaling")
+        reasons.append("High damage but fragile composition")
 
-    # if t1["ad"] == 5 or t1["ap"] == 5:
-    #     score -= 0.1
-    #     reasons.append("Unbalanced damage profile")
-    if t1["ad"] > t2["ad"]:
-        score += 0.1
-        reasons.append("Stronger Physcial Dmg")
+    # Team Comparisons
+    # Tank vs no tank
+    if t1["tank"] > 20 and t2["tank"] < 15:
+        score += 0.2
+        reasons.append("Enemy lacks frontline to match yours")
 
-    if t1["ap"] > t2["ap"]:
-        score += 0.1
-        reasons.append("Stronger Magic Dmg")
+    # CC vs squishy
+    if t1["cc"] > 15 and t2["tank"] < 15:
+        score += 0.2
+        reasons.append("Enemy vulnerable to CC chain")
+
+    damage_advantage = (t1["ad"] + t1["ap"]) - (t2["ad"] + t2["ap"])
+
+    if damage_advantage > 5:
+        score += 0.2
+        reasons.append("Higher overall damage output")
+
+    phys_ratio = t1["compPhysical"] / 5
+    magic_ratio = t1["compMagic"] / 5
+
+    if phys_ratio > 0.8 or magic_ratio > 0.8:
+        score -= 0.3
+        reasons.append("Highly skewed damage (easy to itemise against)")
+    elif phys_ratio > 0.6 or magic_ratio > 0.6:
+        score -= 0.1
+        reasons.append("Slightly unbalanced damage")
 
     return score, reasons
 
@@ -99,15 +133,10 @@ def getTags(champs):
     tags = []
     for champ in champs:
         c = CHAMPS[champ]
-        for tag in c["tags"]:
+        for tag in c["roles"]:
             tags.append(tag)
 
     return set(tags)
-
-
-def runThroughChamps(champs):
-    for c in champs:
-        print(f"{c} Difficulty is: {CHAMPS[c]['difficulty']}")
 
 
 CHAMPIONLIST = []
@@ -118,14 +147,12 @@ ROLELIST = getTags(CHAMPIONLIST)
 
 # Test
 if __name__ == "__main__":
-    team1 = ["Quinn", "Kindred", "Varus", "Jinx", "Thresh"]
-    team2 = ["Chogath", "Khazix", "Lux", "Twitch", "Nami"]
+    team1 = ["Yuumi", "Yuumi", "Yuumi", "Yuumi", "Yuumi"]
+    team2 = ["Darius", "Sejuani", "Lux", "Twitch", "Nami"]
 
     result = predict(team1, team2)
 
-    # print(f"Chance of Win is {result['winProbability'] * 100:.0f}%")
-    # print("Reasons:")
-    # for r in result["reasons"]:
-    #     print("-> ", r)
-
-    # runThroughChamps(CHAMPS)
+    print(f"Team 1s chance of a Win is {result['winProbability'] * 100:.0f}%")
+    print("Composition Overview:")
+    for r in result["reasons"]:
+        print("-> ", r)
