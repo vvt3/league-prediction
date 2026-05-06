@@ -256,8 +256,10 @@ def getTags(champs):
     tags = []
     for champ in champs:
         c = CHAMPS[champ]
-        for tag in c["roles"]:
-            tags.append(tag)
+        tags.append(c["championTagInfo"]["championTagPrimary"])
+        tags.append(c["championTagInfo"]["championTagSecondary"])
+        # for tag in c["championTagInfo"]["championTagPrimary"]:
+        #     tags.append(tag)
 
     return set(tags)
 
@@ -266,7 +268,7 @@ CHAMPIONLIST = []
 for c in CHAMPS:
     CHAMPIONLIST.append(c)
 
-ROLELIST = getTags(CHAMPIONLIST)
+MYDATA = getTags(CHAMPIONLIST)
 
 # Test
 if __name__ == "__main__":
@@ -276,11 +278,13 @@ if __name__ == "__main__":
 
     result = predict(team1, team2)
 
-    print("Composition Overview:")
-    for r in result["reasons"]:
-        print("-> ", r)
-    print(f"Your chance of a Win is {result['winProbability'] * 100:.0f}%")
+    # print("Composition Overview:")
+    # for r in result["reasons"]:
+    #     print("-> ", r)
+    # print(f"Your chance of a Win is {result['winProbability'] * 100:.0f}%")
 
     # TESTING
     t1 = analyse_team(team1)
     t2 = analyse_team(team2)
+
+    print(MYDATA)

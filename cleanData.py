@@ -158,8 +158,10 @@ def getStatusTags(spellInfo):
 
 for name, champ in rawRiot.items():
     community_champ = rawComminity.get(name)
+    fiddle = rawComminity.get("FiddleSticks")
 
     cleaned[name] = {
+        "name": champ["id"],
         "roles": champ.get("tags", []),
         "attack": champ["info"]["attack"],
         "defense": champ["info"]["defense"],
@@ -168,6 +170,14 @@ for name, champ in rawRiot.items():
         "statusEffects": getStatusTags(champ["spells"]),
         # "passiveInfo": champ["passive"]["description"],
     }
+
+    if fiddle:
+        # cleaned[name]["passive"] = community_champ.get("passive", {})
+        cleaned[name]["roles"] = fiddle.get("roles", [])
+        cleaned[name]["damage type"] = fiddle.get("tacticalInfo")["damageType"]
+        cleaned[name]["attack type"] = fiddle.get("tacticalInfo", {})["attackType"]
+        cleaned[name]["playstyleInfo"] = fiddle.get("playstyleInfo", {})
+        cleaned[name]["championTagInfo"] = fiddle.get("championTagInfo", {})
 
     if community_champ:
         # cleaned[name]["passive"] = community_champ.get("passive", {})
