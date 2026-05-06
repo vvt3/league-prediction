@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <body>
+    <h1>League Comp Analyser</h2>
+
+    <input id="team1" placeholder="Ornn,Sejuani,Zed,Jinx,Thresh" />
+    <input id="team2" placeholder="Darius,Khazix,Lux,Ziggs,Yuumi" />
+
+    <button onclick="analyse()">Analyse</button>
+
+    <pre id="output"></pre>
+
+    <script>
+      async function analyse() {
+        const team1 = document.getElementById("team1").value.split(",");
+        const team2 = document.getElementById("team2").value.split(",");
+
+        const res = await fetch("http://127.0.0.1:8000/analyse", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ team1, team2 }),
+        });
+
+        const data = await res.json();
+        document.getElementById("output").innerText = JSON.stringify(
+          data,
+          null,
+          2,
+        );
+      }
+    </script>
+  </body>
+</html>

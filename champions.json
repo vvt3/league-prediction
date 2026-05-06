@@ -450,7 +450,7 @@
       "slow",
       "knock",
       "stun",
-      "flee"
+      "fear"
     ],
     "damage type": "kPhysical",
     "attack type": "melee",
@@ -1129,7 +1129,7 @@
     "magic": 8,
     "statusEffects": [
       "slow",
-      "flee",
+      "fear",
       "root",
       "slow",
       "slow"
@@ -1988,7 +1988,8 @@
     "defense": 2,
     "magic": 9,
     "statusEffects": [
-      "silence"
+      "silence",
+      "suppress"
     ],
     "damage type": "kMagic",
     "attack type": "ranged",
@@ -3032,6 +3033,7 @@
     "statusEffects": [
       "slow",
       "stun",
+      "suppress",
       "slow"
     ],
     "damage type": "kPhysical",
@@ -3218,7 +3220,8 @@
       "slow",
       "slow",
       "slow",
-      "stun"
+      "stun",
+      "suppress"
     ],
     "damage type": "kPhysical",
     "attack type": "melee",
@@ -3721,6 +3724,7 @@
       "slow",
       "stun",
       "slow",
+      "suppress",
       "fear"
     ],
     "damage type": "kPhysical",
@@ -4015,7 +4019,8 @@
     "defense": 5,
     "magic": 3,
     "statusEffects": [
-      "fear"
+      "fear",
+      "suppress"
     ],
     "damage type": "kMixed",
     "attack type": "melee",
@@ -4120,7 +4125,9 @@
     "defense": 4,
     "magic": 4,
     "statusEffects": [
-      "knock"
+      "knock",
+      "airborne",
+      "airborne"
     ],
     "damage type": "kPhysical",
     "attack type": "melee",

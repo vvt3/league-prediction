@@ -40,10 +40,10 @@ NORMALISE = {
     "Suppresses": "supress",
     "Grounding": "ground",
     "Grounded": "ground",
-    "Flee": "flee",
     "Taunting": "taunt",
     "Taunts": "taunt",
     "Fear": "fear",
+    "Flee": "fear",
     "Fears": "fear",
     "Fearing": "fear",
     "Feared": "fear",
@@ -75,7 +75,6 @@ VALID_STATUS = (
     "silence",
     "supress",
     "ground",
-    "flee",
     "taunt",
     "fear",
     "sleep",
@@ -115,19 +114,19 @@ def normaliseStatus(effects):
         elif "taunt" in effect:
             data.append("taunt")
         elif "flee" in effect:
-            data.append("flee")
+            data.append("fear")
         elif "ground" in effect:
             data.append("ground")
         elif "disarm" in effect:
             data.append("disarm")
         elif "polymorph" in effect:
             data.append("polymorph")
-        elif "airbourne" in effect:
-            data.append("airbourne")
+        elif "airborne" in effect:
+            data.append("airborne")
         elif "charm" in effect:
             data.append("charm")
-        elif "supress" in effect:
-            data.append("supress")
+        elif "suppress" in effect:
+            data.append("suppress")
         elif "blind" in effect:
             data.append("blind")
         elif "pull" in effect:
